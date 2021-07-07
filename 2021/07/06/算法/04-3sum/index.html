@@ -22,23 +22,23 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.zihang.xin","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 <meta property="og:type" content="article">
 <meta property="og:title" content="04 三数之和">
-<meta property="og:url" content="http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/index.html">
+<meta property="og:url" content="http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/index.html">
 <meta property="og:site_name" content="有趣程序猿">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/01.png">
-<meta property="article:published_time" content="2021-07-07T09:45:16.000Z">
-<meta property="article:modified_time" content="2021-07-07T11:23:58.088Z">
+<meta property="og:image" content="http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/01.png">
+<meta property="article:published_time" content="2021-07-06T13:45:16.000Z">
+<meta property="article:modified_time" content="2021-07-07T11:35:46.556Z">
 <meta property="article:author" content="Bruce">
 <meta property="article:tag" content="算法, algorithm">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/01.png">
+<meta name="twitter:image" content="http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/01.png">
 
 
-<link rel="canonical" href="http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/">
+<link rel="canonical" href="http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/","path":"2021/07/07/算法/04-3sum/","title":"04 三数之和"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/","path":"2021/07/06/算法/04-3sum/","title":"04 三数之和"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>04 三数之和 | 有趣程序猿</title>
@@ -189,7 +189,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.zihang.xin/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/">
+    <link itemprop="mainEntityOfPage" href="http://blog.zihang.xin/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -213,7 +213,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-07-07 17:45:16" itemprop="dateCreated datePublished" datetime="2021-07-07T17:45:16+08:00">2021-07-07</time>
+      <time title="创建时间：2021-07-06 21:45:16" itemprop="dateCreated datePublished" datetime="2021-07-06T21:45:16+08:00">2021-07-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -237,7 +237,7 @@
     <div class="post-body" itemprop="articleBody">
         <!-- 04 三数之和 -->
 <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/3sum/">题目</a><br><img src="/2021/07/07/%E7%AE%97%E6%B3%95/04-3sum/01.png"><br>今天这个题目有些难度，但是社区里有许多大神的经典解答可以参考学习。暴力解法就先不看了，时间复杂度最少要O(n^3)，先来看看双指针的解法。</p>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/3sum/">题目</a><br><img src="/2021/07/06/%E7%AE%97%E6%B3%95/04-3sum/01.png"><br>今天这个题目有些难度，但是社区里有许多大神的经典解答可以参考学习。暴力解法就先不看了，时间复杂度最少要O(n^3)，先来看看双指针的解法。</p>
 <h1 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h1><ul>
 <li>首先需要将数组排序（升序），这个就是为了下面的工作铺垫</li>
 <li>设置一个固定位 k，然后设置两个指针 i 和 j，就有了 sum = nums[k] + nums[i] + nums[j] = 0</li>
@@ -262,7 +262,7 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/07/07/%E7%AE%97%E6%B3%95/03-climbing-stairs/" rel="prev" title="03 爬楼梯">
+                <a href="/2021/07/05/%E7%AE%97%E6%B3%95/03-climbing-stairs/" rel="prev" title="03 爬楼梯">
                   <i class="fa fa-chevron-left"></i> 03 爬楼梯
                 </a>
             </div>
